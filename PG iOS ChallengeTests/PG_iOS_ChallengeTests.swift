@@ -9,6 +9,30 @@ import XCTest
 @testable import PG_iOS_Challenge
 
 class PG_iOS_ChallengeTests: XCTestCase {
+    
+    func testItemWithNoURL() {
+        let item = Item(id: 534343, type: "comment", title: "Tester", kids: [1345, 5768], by: "ericagredo")
+        XCTAssertNil(item.url)
+       }
+    func testItemWithNoKids() {
+        let item = Item(id: 534343, type: "comment", title: "Tester", by: "ericagredo")
+        XCTAssertNil(item.kids)
+       }
+    func testItemWithKids(){
+        let item = Item(id: 534343, type: "comment", title: "Tester", kids: [1345, 5768], by: "ericagredo")
+        XCTAssertGreaterThan(item.kids?.count ?? 0, 1)
+    }
+    
+    func testTypeOfItem(){
+        let vm = StoryViewModel()
+        Task{
+            await vm.convertToItems(ids: [30795846])
+            
+            XCTAssertEqual(vm.items.first?.type, "story")
+        }
+        
+        
+    }
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.

@@ -6,12 +6,19 @@
 //
 
 import XCTest
+import ViewInspector
+@testable import PG_iOS_Challenge
+
+
+
 
 class PG_iOS_ChallengeUITests: XCTestCase {
-
+    
+   
+   
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
-
+       
         // In UI tests it is usually best to stop immediately when a failure occurs.
         continueAfterFailure = false
 
@@ -19,7 +26,8 @@ class PG_iOS_ChallengeUITests: XCTestCase {
     }
 
     override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
+        
+        
     }
 
     func testExample() throws {
