@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		AD17908927ED188100C7738F /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD17908827ED188100C7738F /* ActivityIndicator.swift */; };
 		AD17908B27ED19A100C7738F /* CommentsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD17908A27ED19A100C7738F /* CommentsViewModel.swift */; };
-		AD17908E27ED1A8500C7738F /* ViewInspector in Frameworks */ = {isa = PBXBuildFile; productRef = AD17908D27ED1A8500C7738F /* ViewInspector */; };
 		AD2C37B127EA64D70096E912 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2C37B027EA64D70096E912 /* AppDelegate.swift */; };
 		AD2C37B327EA64D70096E912 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2C37B227EA64D70096E912 /* SceneDelegate.swift */; };
 		AD2C37B527EA64D70096E912 /* MainContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2C37B427EA64D70096E912 /* MainContentView.swift */; };
@@ -69,7 +68,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				AD46B6E127EC14C400BA64AC /* SwiftSoup in Frameworks */,
-				AD17908E27ED1A8500C7738F /* ViewInspector in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -180,7 +178,6 @@
 			name = "PG iOS Challenge";
 			packageProductDependencies = (
 				AD46B6E027EC14C400BA64AC /* SwiftSoup */,
-				AD17908D27ED1A8500C7738F /* ViewInspector */,
 			);
 			productName = "PG iOS Challenge";
 			productReference = AD2C37AD27EA64D70096E912 /* PG iOS Challenge.app */;
@@ -256,7 +253,6 @@
 			mainGroup = AD2C37A427EA64D70096E912;
 			packageReferences = (
 				AD46B6DF27EC14C400BA64AC /* XCRemoteSwiftPackageReference "SwiftSoup" */,
-				AD17908C27ED1A8500C7738F /* XCRemoteSwiftPackageReference "ViewInspector" */,
 			);
 			productRefGroup = AD2C37AE27EA64D70096E912 /* Products */;
 			projectDirPath = "";
@@ -635,14 +631,6 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		AD17908C27ED1A8500C7738F /* XCRemoteSwiftPackageReference "ViewInspector" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/nalexn/ViewInspector";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 0.9.1;
-			};
-		};
 		AD46B6DF27EC14C400BA64AC /* XCRemoteSwiftPackageReference "SwiftSoup" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/scinfu/SwiftSoup.git";
@@ -654,11 +642,6 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		AD17908D27ED1A8500C7738F /* ViewInspector */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = AD17908C27ED1A8500C7738F /* XCRemoteSwiftPackageReference "ViewInspector" */;
-			productName = ViewInspector;
-		};
 		AD46B6E027EC14C400BA64AC /* SwiftSoup */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = AD46B6DF27EC14C400BA64AC /* XCRemoteSwiftPackageReference "SwiftSoup" */;
